@@ -1,0 +1,19 @@
+name: Sync Actions
+on: 
+    workflow_dispatch: 
+
+
+jobs:
+    Sync-actions:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout actions sync
+              uses: actions/checkout@v4
+
+            - name: Sync upstream repo
+              uses: dabreadman/sync-upstream-repo@v1.3.0
+              with:
+                upstream_repo: https://github.com/github/RoundTheCode/AzureTestProject
+                upstream_branch: master
+                downstream_branch: master
+                token: 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
