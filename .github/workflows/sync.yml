@@ -16,4 +16,4 @@ jobs:
                 upstream_repo: https://github.com/github/RoundTheCode/AzureTestProject
                 upstream_branch: master
                 downstream_branch: master
-                token: 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
+                token: ${{ secrets.TOKEN }}
